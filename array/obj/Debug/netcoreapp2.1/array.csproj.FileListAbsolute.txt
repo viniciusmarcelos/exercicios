@@ -1,0 +1,10 @@
+D:\dev\exercicios\array\bin\Debug\netcoreapp2.1\array.deps.json
+D:\dev\exercicios\array\bin\Debug\netcoreapp2.1\array.runtimeconfig.json
+D:\dev\exercicios\array\bin\Debug\netcoreapp2.1\array.runtimeconfig.dev.json
+D:\dev\exercicios\array\bin\Debug\netcoreapp2.1\array.dll
+D:\dev\exercicios\array\bin\Debug\netcoreapp2.1\array.pdb
+D:\dev\exercicios\array\obj\Debug\netcoreapp2.1\array.csproj.CoreCompileInputs.cache
+D:\dev\exercicios\array\obj\Debug\netcoreapp2.1\array.AssemblyInfoInputs.cache
+D:\dev\exercicios\array\obj\Debug\netcoreapp2.1\array.AssemblyInfo.cs
+D:\dev\exercicios\array\obj\Debug\netcoreapp2.1\array.dll
+D:\dev\exercicios\array\obj\Debug\netcoreapp2.1\array.pdb
