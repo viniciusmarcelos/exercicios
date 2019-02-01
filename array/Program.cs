@@ -6,7 +6,7 @@ namespace array
     {
         static void Main(string[] args)
         {
-            #region Procurar
+            #region Find
             string[] vetor = new string[] { "ana", "paula", "luiz", "beatriz", "afonso" };
             const string alvo = "luiz";
             const string alvoerrado = "JHENIFFFFEEER (não encontrada aqui, mas sim no TINDER)";
@@ -15,7 +15,7 @@ namespace array
             Console.WriteLine("\nAo procurar pelo nome {0} no vetor, retornamos a posição dele, que é: {1}.\n", alvo, Find(vetor, alvo));
             Console.WriteLine("Se procurarmos por {0} no vetor, retornamos o código de não encontrado: {1}.\n", alvoerrado, Find(vetor, alvoerrado));
             #endregion
-            #region Juntar
+            #region Join
             string[] parte1 = new string[] { "Um", "Dois", "Três", "Quatro", "Cinco", "Seis" };
             string[] parte2 = new string[] { "Sete", "Oito", "Nove", "Dez" };
             Console.WriteLine("Agora, temos dois vetores:\n");
