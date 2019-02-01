@@ -7,27 +7,53 @@ namespace ChaoticSort
         static void Main(string[] args)
         {
             string[] testArray = new string[] { "ana", "paula", "luiz", "beatriz", "afonso", "beatriz" };
-            string a = "Anaa           asdsad       asdasd";
-            string b = "Ana";
-            Console.WriteLine("O vetor está em ortem?"+ Is);
-
+            string[] a = new string[] { "bia", "ana", "zema" };
+            Console.WriteLine("Temos o vetor inicialmente inserido:\n");
+            WriteArray(testArray);
+            Console.WriteLine("\nE após muito esforço, que nem dá pra ver, ele foi ordenado:\n");
+            WriteArray(OrderStringArray(testArray));
             Console.ReadKey();
         }
-        //public static string[] OrderStringArray(string[] array1)
-        //{
-        //    string[] array2 = new string[array1.Length];
-        //    if (ordered)
-        //    {
-        //        return array1;
-        //    }
-        //    return array2;
+        public static string[] OrderStringArray(string[] a)
+        {
+            if (IsItOrdered(a))
+            {
+                return a;
+            }            
+            do
+            {
+                int i = 0;
+                do
+                {
+                    if (!IsTheFirstSmaller(a[i], a[i + 1]))
+                    {
+                        SwapPositions(a, i, i + 1);
+                        if (IsItOrdered(a))
+                        {
+                            return a;
+                        }
+                    }
+                    i++;
+                }
+                while (i < a.Length - 1);
+            }
+            while (!IsItOrdered(a));
+            return a;
+        }
+        public static string[] SwapPositions(string[] a, int pos1, int pos2)
+        {
+            string aux = null;
+            aux = a[pos1];
+            a[pos1] = a[pos2];
+            a[pos2] = aux;
+            return a;
         }
         public static bool IsItOrdered(string[] a)
         {
             int i = 0;
             do
             {
-                if (IsTheFirstSmaller(a[i],a[i+1]))
+                if (IsTheFirstSmaller(a[i], a[i + 1]))
                 {
                     i++;
                 }
@@ -36,10 +62,9 @@ namespace ChaoticSort
                     return false;
                 }
             }
-            while (i < a.Length-1);
+            while (i < a.Length - 1);
             return true;
         }
-
         public static bool IsTheFirstSmaller(string string1, string string2) //checks if string1 is smaller than string2, returns true or false
         {
             bool smaller = true;
@@ -69,6 +94,13 @@ namespace ChaoticSort
                 smaller = string1.Length > string2.Length ? false : true; //if all the compared characters are equal, then the string with less characters is the smaller
             }
             return smaller;
+        }
+        public static void WriteArray(string[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.Write(a[i] + (i < (a.Length - 1) ? ", " : ".\n"));
+            }
         }
     }
 }
