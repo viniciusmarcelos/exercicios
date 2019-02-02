@@ -1,24 +1,70 @@
 ﻿using System;
 
-namespace ChaoticSort
+namespace InsertNamesAndSort
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string[] testArray = new string[] { "ana", "paula", "luiz", "beatriz", "afonso", "beatriz" };
-            Console.WriteLine("Temos o vetor inicialmente inserido:\n");
-            WriteArray(testArray);
-            Console.WriteLine("\nE após muito esforço, que nem dá pra ver, ele foi ordenado:\n");
-            WriteArray(OrderStringArray(testArray));
+            Console.WriteLine("Neste programa você poderá inserir quantos nomes quiser.\n" +
+                "E depois de finalizado, ele irá exibi-los e depois colocá-los em ordem.\n" +
+                "Não misture letras maiúsculas com minúsculas, use apenas um tipo.\n\n" +
+                "Favor insira o primeiro nome e pressione ENTER:");
+            string[] a = new string[1];
+            int i = 0;
+            do
+            {
+                a[i] = Console.ReadLine();
+                if (a[i] == "")
+                {
+                    a = RemoveLast(a);
+                    break;
+                }
+                Console.WriteLine("O nome {0} foi adicionado. Total de {1} nomes.\n" +
+                    "Entre com o próximo nome, ou apenas ENTER se terminou:", a[i], a.Length);
+                a = AddOneLength(a);
+                i++;
+            }
+            while (true);
+            Console.WriteLine("Ok! Os nomes digitados foram:\n");
+            WriteArray(a);
+            Console.WriteLine("\nPressine ENTER para ordená-los.");
             Console.ReadKey();
+            Console.WriteLine("Colocando os nomes em ordem alfabética, temos:\n");
+            WriteArray(OrderStringArray(a));
+            Console.ReadKey();
+        }
+        public static string[] AddOneLength(string[] a)
+        {
+            string[] b = new string[a.Length + 1];
+            for (int i = 0; i < a.Length; i++)
+            {
+                b[i] = a[i];
+            }
+            return b;
+        }
+        public static string[] RemoveLast(string[] a)
+        {
+            string[] b = new string[a.Length - 1];
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                b[i] = a[i];
+            }
+            return b;
+        }
+        public static void WriteArray(string[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.Write(a[i] + (i < (a.Length - 1) ? ", " : ".\n"));
+            }
         }
         public static string[] OrderStringArray(string[] a)
         {
             if (IsItOrdered(a))
             {
                 return a;
-            }            
+            }
             do
             {
                 int i = 0;
@@ -93,13 +139,6 @@ namespace ChaoticSort
                 smaller = string1.Length > string2.Length ? false : true; //if all the compared characters are equal, then the string with less characters is the smaller
             }
             return smaller;
-        }
-        public static void WriteArray(string[] a)
-        {
-            for (int i = 0; i < a.Length; i++)
-            {
-                Console.Write(a[i] + (i < (a.Length - 1) ? ", " : ".\n"));
-            }
         }
     }
 }
