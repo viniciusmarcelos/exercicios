@@ -11,6 +11,17 @@ namespace InsertNamesAndSort
                 "Não misture letras maiúsculas com minúsculas, use apenas um tipo.\n\n" +
                 "Favor insira o primeiro nome e pressione ENTER:");
             string[] a = new string[1];
+            a = AddNames(a);
+            Console.WriteLine("Ok! Os nomes digitados foram:\n");
+            WriteArray(a);
+            Console.WriteLine("\nPressine ENTER para ordená-los.");
+            Console.ReadKey();
+            Console.WriteLine("Colocando os nomes em ordem alfabética, temos:\n");
+            WriteArray(OrderStringArray(a));
+            Console.ReadKey();
+        }
+        public static string[] AddNames(string[] a)
+        {
             int i = 0;
             do
             {
@@ -21,18 +32,12 @@ namespace InsertNamesAndSort
                     break;
                 }
                 Console.WriteLine("O nome {0} foi adicionado. Total de {1} nomes.\n" +
-                    "Entre com o próximo nome, ou apenas ENTER se terminou:", a[i], a.Length);
+                                "Entre com o próximo nome, ou apenas ENTER se terminou:", a[i], a.Length);
                 a = AddOneLength(a);
                 i++;
             }
             while (true);
-            Console.WriteLine("Ok! Os nomes digitados foram:\n");
-            WriteArray(a);
-            Console.WriteLine("\nPressine ENTER para ordená-los.");
-            Console.ReadKey();
-            Console.WriteLine("Colocando os nomes em ordem alfabética, temos:\n");
-            WriteArray(OrderStringArray(a));
-            Console.ReadKey();
+            return a;
         }
         public static string[] AddOneLength(string[] a)
         {
