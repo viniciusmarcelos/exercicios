@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "arrayzonose.Test", "arrayzo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChaoticSort", "ChaoticSort\ChaoticSort.csproj", "{B3C38DAA-0B3D-4212-B436-89E4FDFDEDB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertNamesAndSort", "InsertNamesAndSort\InsertNamesAndSort.csproj", "{BCB7F8AE-2BC0-4D49-B988-210D95216EDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsertNamesAndSort", "InsertNamesAndSort\InsertNamesAndSort.csproj", "{BCB7F8AE-2BC0-4D49-B988-210D95216EDE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agenda", "Agenda\Agenda.csproj", "{49DCBF99-FD86-4695-8E49-E520ACF4550F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChaoticSort2", "ChaoticSort2\ChaoticSort2.csproj", "{48A3C018-4632-4B78-9B98-726B1C09580F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryFind", "BinaryFind\BinaryFind.csproj", "{CAD1D5B3-87A1-45DE-88B7-9453FC7688F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{BCB7F8AE-2BC0-4D49-B988-210D95216EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCB7F8AE-2BC0-4D49-B988-210D95216EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCB7F8AE-2BC0-4D49-B988-210D95216EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49DCBF99-FD86-4695-8E49-E520ACF4550F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49DCBF99-FD86-4695-8E49-E520ACF4550F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49DCBF99-FD86-4695-8E49-E520ACF4550F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49DCBF99-FD86-4695-8E49-E520ACF4550F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A3C018-4632-4B78-9B98-726B1C09580F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A3C018-4632-4B78-9B98-726B1C09580F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A3C018-4632-4B78-9B98-726B1C09580F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A3C018-4632-4B78-9B98-726B1C09580F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD1D5B3-87A1-45DE-88B7-9453FC7688F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD1D5B3-87A1-45DE-88B7-9453FC7688F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD1D5B3-87A1-45DE-88B7-9453FC7688F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD1D5B3-87A1-45DE-88B7-9453FC7688F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
