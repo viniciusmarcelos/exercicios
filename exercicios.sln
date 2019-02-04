@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "arrayzonose", "array\arrayz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "arrayzonose.Test", "arrayzonose.Test\arrayzonose.Test.csproj", "{5595F116-0140-49EB-A224-C0CEEEA5542E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChaoticSort", "ChaoticSort\ChaoticSort.csproj", "{B3C38DAA-0B3D-4212-B436-89E4FDFDEDB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChaoticSort", "ChaoticSort\ChaoticSort.csproj", "{B3C38DAA-0B3D-4212-B436-89E4FDFDEDB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertNamesAndSort", "InsertNamesAndSort\InsertNamesAndSort.csproj", "{BCB7F8AE-2BC0-4D49-B988-210D95216EDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B3C38DAA-0B3D-4212-B436-89E4FDFDEDB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3C38DAA-0B3D-4212-B436-89E4FDFDEDB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3C38DAA-0B3D-4212-B436-89E4FDFDEDB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB7F8AE-2BC0-4D49-B988-210D95216EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB7F8AE-2BC0-4D49-B988-210D95216EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB7F8AE-2BC0-4D49-B988-210D95216EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB7F8AE-2BC0-4D49-B988-210D95216EDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
