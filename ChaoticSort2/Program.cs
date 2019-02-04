@@ -16,23 +16,21 @@ namespace ChaoticSort2
         public static string[] OrderStringArray(string[] a)
         {
             int iMax = a.Length - 1;
-            int newMax = iMax;
-            bool ready = false;
+            int lastSwap = 0;
             do
             {
-                ready = true;
-                iMax = newMax;
+                lastSwap = 0;
                 for (int i = 0; i < iMax; i++)
                 {
                     if (!IsTheFirstSmaller(a[i], a[i + 1]))
                     {
                         SwapPositions(a, i, i + 1);
-                        newMax = i;
-                        ready = false;
+                        lastSwap = i;
                     }
                 }
+                iMax = lastSwap;
             }
-            while ((iMax <= 1)||!ready);
+            while (lastSwap != 0);
             return a;
         }
         public static string[] SwapPositions(string[] a, int pos1, int pos2)
