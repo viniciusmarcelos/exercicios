@@ -16,49 +16,25 @@ namespace ChaoticSort2
         public static string[] OrderStringArray(string[] a)
         {
             int iMax = a.Length - 1;
+            int newMax = iMax;
+            bool ready = false;
             do
             {
+                ready = true;
+                iMax = newMax;
                 for (int i = 0; i < iMax; i++)
                 {
-                    Console.WriteLine("for número " + i);
-                    Console.WriteLine("O iMax no inicio do for " + iMax);
                     if (!IsTheFirstSmaller(a[i], a[i + 1]))
                     {
-                        Console.WriteLine("Fez uma troca");
                         SwapPositions(a, i, i + 1);
-                        iMax = i;
-                        Console.WriteLine("Mudou o o iMax para " + iMax);
+                        newMax = i;
+                        ready = false;
                     }
                 }
             }
-            while (!(iMax <= 1));
+            while ((iMax <= 1)||!ready);
             return a;
         }
-
-
-
-
-        //    bool ready = true;
-        //    int iMax = a.Length - 1;
-        //    do
-        //    {
-        //        ready = true;
-        //        int i = 0;
-        //        do
-        //        {
-        //            if (!IsTheFirstSmaller(a[i], a[i + 1]))
-        //            {
-        //                SwapPositions(a, i, i + 1);
-        //                ready = false;
-        //            }
-        //            i++;
-        //        }
-        //        while (i < iMax);
-        //        iMax--;
-        //    }
-        //    while (!ready);
-        //    return a;
-        //}
         public static string[] SwapPositions(string[] a, int pos1, int pos2)
         {
             string aux = null;
