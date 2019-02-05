@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agenda", "Agenda\Agenda.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChaoticSort2", "ChaoticSort2\ChaoticSort2.csproj", "{48A3C018-4632-4B78-9B98-726B1C09580F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryFind", "BinaryFind\BinaryFind.csproj", "{CAD1D5B3-87A1-45DE-88B7-9453FC7688F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryFind", "BinaryFind\BinaryFind.csproj", "{CAD1D5B3-87A1-45DE-88B7-9453FC7688F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort", "InsertionSort\InsertionSort.csproj", "{4A86107E-9650-44D4-AE61-619DB8DA0C07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{CAD1D5B3-87A1-45DE-88B7-9453FC7688F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAD1D5B3-87A1-45DE-88B7-9453FC7688F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAD1D5B3-87A1-45DE-88B7-9453FC7688F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A86107E-9650-44D4-AE61-619DB8DA0C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A86107E-9650-44D4-AE61-619DB8DA0C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A86107E-9650-44D4-AE61-619DB8DA0C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A86107E-9650-44D4-AE61-619DB8DA0C07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
