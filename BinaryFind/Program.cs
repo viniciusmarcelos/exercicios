@@ -10,24 +10,43 @@ namespace BinaryFind
             Console.WriteLine("This program will find a string in a string[] using a method called Binary Find.\n" +
                 "The string is: \n");
             WriteArray(a);
-            Console.WriteLine("Now, type a name to search for:");
-            string name = Console.ReadLine();
-            Console.WriteLine("\nTo search, we first put the array in order:\n");
-            WriteArrayWithIndex(OrderStringArray(a));
-            Console.WriteLine("\nThe name {0} is in the {1}{2} position.", name, Find(a,name), ThAdder(Find(a,name)));
-            Console.ReadKey();
+            string menu = "first pass";
+            string name = "";
+            do
+            {
+                switch (menu)
+                {
+                    case "first pass":
+                        Console.WriteLine("\nThe inserted array in order is:\n");
+                        OrderStringArray(a);
+                        WriteArrayWithIndex(OrderStringArray(a));
+                        Console.WriteLine("\nType a name to search for:");
+                        menu = "so on passes";
+                        break;
+                    case "so on passes":
+                        name = Console.ReadLine();
+                        if (name == "")
+                        {
+                            menu = "quit";
+                            break;
+                        }
+                        int pos = Find(a, name);
+                        Console.WriteLine("The name {0} is in the {1}{2} position.\n" +
+                            "Type another name to search for, or ENTER to quit:", name, pos, ThAdder(pos));
+                        break;
+                }
+            } while (menu!="quit");
         }
         public static int Find(string[] a, string name)
         {
             int start = 0;
             int end = a.Length - 1;
             int mid = 0;
-            string[] b = CoppyStringArray(a);
-            OrderStringArray(b);
+            OrderStringArray(a);
             do
             {
                 mid = MiddlePosition(start, end);
-                if (IsTheFirstSmaller(name, b[mid])) //checks if the inserted name is smaller than middle position string
+                if (IsTheFirstSmaller(name, a[mid])) //checks if the inserted name is smaller than middle position string
                 {
                     end = mid;
                 }
@@ -37,11 +56,11 @@ namespace BinaryFind
                 }
             }
             while (end - start > 1);
-            if (b[end] == name)
+            if (a[end] == name)
             {
                 return end;
             }
-            else if (b[start] == name)
+            else if (a[start] == name)
             {
                 return start;
             }
@@ -50,15 +69,6 @@ namespace BinaryFind
         public static int MiddlePosition(int a, int b)
         {
             return (a + b) / 2;
-        }
-        public static string[] CoppyStringArray(string[] a)
-        {
-            string[] b = new string[a.Length];
-            for (int i = 0; i < a.Length; i++)
-            {
-                b[i] = a[i];
-            }
-            return b;
         }
         public static string[] OrderStringArray(string[] a)
         {
