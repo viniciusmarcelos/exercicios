@@ -35,7 +35,7 @@ namespace BinaryFind
                             "Type another name to search for, or ENTER to quit:", name, pos, ThAdder(pos));
                         break;
                 }
-            } while (menu!="quit");
+            } while (menu != "quit");
         }
         public static int Find(string[] a, string name)
         {
