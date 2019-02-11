@@ -41,7 +41,7 @@ Sugiro a criação de uma nova Solution em outro Repositório só com esses proj
 Cuida da impressão dos menus, deve ter os métodos:
 - ```void PrintMessage(string) //recebe um texto```
 - ```void PrintOptions(string, string[]) //recebe um texto explicativo e a lista das opções```
-- ```void ReadOption(string opcional) //recebe um texto para mostrar antes de ler a opcao. Se nao passar nada escrever: "Digite o número da opção". Deve validar o número da opçao se possível```
+- ```int ReadOption(string opcional) //recebe um texto para mostrar antes de ler a opcao. Se nao passar nada escrever: "Digite o número da opção". Deve validar o número da opçao se possível```
 - ```decimal ReadMoneyValue(string opcional) //recebe um texto para mostrar antes de ler o número. Se nao passar nada escrever: "Digite o valor:". Deve verificar se é um numero válido.```
 - ```string ReadStringValue(string opcional) //recebe um texto para mostrar antes de ler o valor. Se nao passar nada escrever: "Digite o valor:"```
 Os métodos não precisam ser exaaatamente assim.
