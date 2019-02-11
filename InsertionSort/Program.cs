@@ -39,7 +39,7 @@ namespace InsertionSort
             while (lastOrdered < a.Length - 1);
             return a;
         }
-        public static string[] InsertionSort(string[] a) //by finding the smalles string then swaping it with the first one on the array, and so on
+        public static string[] InsertionSort(string[] a) //by finding the smallest string then swaping it with the first one on the array, and so on
         {
             int lastOrdered = 0;
             do

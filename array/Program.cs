@@ -1,4 +1,5 @@
 ﻿using System;
+using ArrayLibrary;
 
 namespace array
 {
@@ -7,7 +8,7 @@ namespace array
         static void Main(string[] args)
         {
             string[] a = new string[] { "ana", "vinicius" };
-            ArrayLib.Escrevevetor(a);
+            ArrayLibrary.Escrevevetor(a);
             Console.ReadKey();
             Console.ReadKey();
         }        
