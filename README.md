@@ -31,6 +31,11 @@ O menu de operações deve ter as opções: 1-Depósito, 2-Saque. E em seguida p
 Funcionalidades não relacionadas ao principal do negócio devem ser colocadas em suas próprias Libs para melhorar a organização.
 impressão dos menus e operações com array se encaixam nessa categoria.
 
+**Importante:** Usar o estilo de código padrão do C# (ver https://github.com/raywenderlich/c-sharp-style-guide, não é o oficial mas é igual, e mais fácil de ler)
+**Importante 2:** Nomes bonitos para as variáveis
+
+Sugiro a criação de uma nova Solution em outro Repositório só com esses projetos.
+
 ### MenuLib
 Cuida da impressão dos menus, deve ter os métodos:
 - ```void PrintMessage(string) //recebe um texto```
