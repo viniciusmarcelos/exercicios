@@ -32,6 +32,7 @@ Funcionalidades não relacionadas ao principal do negócio devem ser colocadas e
 impressão dos menus e operações com array se encaixam nessa categoria.
 
 **Importante:** Usar o estilo de código padrão do C# (ver https://github.com/raywenderlich/c-sharp-style-guide, não é o oficial mas é igual, e mais fácil de ler)
+
 **Importante 2:** Nomes bonitos para as variáveis
 
 Sugiro a criação de uma nova Solution em outro Repositório só com esses projetos.
