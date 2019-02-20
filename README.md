@@ -5,7 +5,7 @@
 ### Point
 
 Crie uma classe para representar um ponto 2d (coordenadas x e y).\
-Deve ser possível calcular a distancia entre dois desses pontos através do método `double DistanceTo(Point other)`.\
+Deve ser possível calcular a distancia entre dois desses pontos através do método `double DistanceTo(Point other)`.
 
 ### Chess
 
