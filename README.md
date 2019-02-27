@@ -1,3 +1,5 @@
+![](https://cdn-images-1.medium.com/max/600/1*yGmNAvfYVs0AcugVXjcNWw.jpeg)
+
 # Programação Orientada a Objetos
 
 ## Exercícios
