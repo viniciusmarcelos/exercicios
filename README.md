@@ -28,12 +28,12 @@ O tipo de dado para representar a permissao fica a seu critério (string, int, o
 ### URI
 
 Crie uma classe que represente uma [URI](https://pt.wikipedia.org/wiki/URI), levando em consideração apenas o primeiro formato:
-
+```
          userinfo     host        port
           ┌─┴────┐ ┌────┴────────┐ ┌┴┐ 
   https://john.doe@www.example.com:123/forum/questions/?tag=networking&order=newest#top
   └─┬─┘ └───────┬────────────────────┘└─┬─────────────┘└──┬───────────────────────┘└┬─┘  
   scheme     authority                 path              query                      fragment
-  
-  A classe deve ser construída a partir de uma string com o formato acima, e guardar cada informação em campos separados.
-  Lembrando que 'query' é uma lista de chave/valor separados por '&' (tag = networking, order = newst, etc)
+```
+A classe deve ser construída a partir de uma string com o formato acima, e guardar cada informação em campos separados.
+Lembrando que 'query' é uma lista de chave/valor separados por '&' (tag = networking, order = newst, etc)
