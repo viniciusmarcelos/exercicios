@@ -1,5 +1,3 @@
-![](https://cdn-images-1.medium.com/max/600/1*yGmNAvfYVs0AcugVXjcNWw.jpeg)
-
 # Programação Orientada a Objetos
 
 ## Exercícios
@@ -16,11 +14,6 @@ Crie uma classe para cada peça de xadrez que guarde sua propria posicao utiliza
 Crie o método `Position[] MovementOptions()` que retorne todas as opções de jogada possíveis para aquela peça (sem levar em consideraçao tamanho do tabuleiro nem se existe outra peça na posição destino).\
 Para peças com movimento infinito considere a distancia máxima como 8.
 
-### Geopoint
-
-Similar ao Point, mas para pontos geograficos (latitude, longitude, de -180 a +180).\
-Deve calcular a distancia levando em consideracao a curvatura da terra.
-
 ### Client
 
 Crie uma classe que represente um cliente, contendo:
@@ -31,3 +24,16 @@ Crie uma classe que represente um cliente, contendo:
 Deve ser possivel dar acesso ao cliente através do metodo `void Grant(premissao)`, remover através de `void Revoke(permissao)` e verificar se ele tem permissão através do metodo `bool Check(permissao)`.\
 Outras classes não devem ter acesso à lista de permissoes.\
 O tipo de dado para representar a permissao fica a seu critério (string, int, outra classe, etc)
+
+### URI
+
+Crie uma classe que represente uma [URI](https://pt.wikipedia.org/wiki/URI), levando em consideração apenas o primeiro formato:
+
+         userinfo     host        port
+          ┌─┴────┐ ┌────┴────────┐ ┌┴┐ 
+  https://john.doe@www.example.com:123/forum/questions/?tag=networking&order=newest#top
+  └─┬─┘ └───────┬────────────────────┘└─┬─────────────┘└──┬───────────────────────┘└┬─┘  
+  scheme     authority                 path              query                      fragment
+  
+  A classe deve ser construída a partir de uma string com o formato acima, e guardar cada informação em campos separados.
+  Lembrando que 'query' é uma lista de chave/valor separados por '&' (tag = networking, order = newst, etc)
