@@ -37,3 +37,11 @@ Crie uma classe que represente uma [URI](https://pt.wikipedia.org/wiki/URI), lev
 ```
 A classe deve ser construída a partir de uma string com o formato acima, e guardar cada informação em campos separados.
 Lembrando que 'query' é uma lista de chave/valor separados por '&' (tag = networking, order = newst, etc)
+
+### Senha em pares
+
+Esse não é necessariamente de Orientação a Objetos, mas é interessante.
+
+Criar um algorítmo para gerar pares de números para senhas, conforme exemplo:
+
+![Itaú](https://cdn-images-1.medium.com/max/400/1*oWve_D3kM_5760JJ7RHnyg.jpeg)
